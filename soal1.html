@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubah Warna Persegi</title>
+    <style>
+        #persegi {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: background-color 0.5s ease;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="persegi"></div>
+
+    <script>
+        const persegi = document.getElementById('persegi');
+
+        // Menambahkan event listener untuk mengubah warna saat di-klik
+        persegi.addEventListener('click', function() {
+            if (persegi.style.backgroundColor === 'red') {
+                persegi.style.backgroundColor = 'blue';
+            } else {
+                persegi.style.backgroundColor = 'red';
+            }
+        });
+    </script>
+</body>
+</html>

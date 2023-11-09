@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(122, 43, 68);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    background-color: #bc34db;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #db349b;
+}
+
+/* Memberi efek hover yan   g halus */
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Memberi efek bayangan pada tombol */
+button {
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.581);
+}
+
+/* Memberi efek transisi saat hover pada tombol */
+button {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Memberi efek hover yang lebih menarik */
+form button:nth-of-type(odd):hover {
+    transform: translateY(-3px);
+}
+
+/* Memberi efek hover yang lebih menarik */
+form button:nth-of-type(even):hover {
+    transform: translateY(-3px);
+}
